@@ -16,7 +16,6 @@ namespace Tetris_WPF
         private const string ContinueText = "Continue";
 
         private VisualBoard visualBoard;
-
         DispatcherTimer dt;
 
         // Functie om de status van SW1 te lezen (placeholder, moet worden geïmplementeerd)
