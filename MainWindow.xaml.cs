@@ -94,7 +94,7 @@ namespace Tetris_WPF
             MainWindow mainWindow = new MainWindow();
             mainWindow.InitializeComponent();
 
-            // Opent een seriële poort op COM1 met een baudrate van 9600
+            // Opent een seriële poort op COM3 met een baudrate van 9600
             SerialPort serialPort = new SerialPort("COM3", 9600);
             serialPort.Open();
 

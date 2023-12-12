@@ -41,9 +41,10 @@
         <Grid x:Name="MainBoard">
             <Grid.RowDefinitions>
                 <!-- Verdeling van rijruimte -->
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="20*"/>
-                <RowDefinition Height="1*"/>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="71*"/>
+                <RowDefinition Height="71*"/>
+                <RowDefinition Height="7*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
@@ -53,12 +54,12 @@
 
             <!-- Buitenrand van het Tetris-bord -->
             <Label Style="{StaticResource BorderBlock}" Grid.Row="0" Grid.ColumnSpan="3"/>
-            <Label Style="{StaticResource BorderBlock}" Grid.Row="2" Grid.ColumnSpan="3"/>
-            <Label Style="{StaticResource BorderBlock}" Grid.Column="0" Grid.RowSpan="3"/>
-            <Label Style="{StaticResource BorderBlock}" Grid.Column="2" Grid.RowSpan="3"/>
+            <Label Style="{StaticResource BorderBlock}" Grid.Row="3" Grid.ColumnSpan="3"/>
+            <Label Style="{StaticResource BorderBlock}" Grid.Column="0" Grid.RowSpan="4"/>
+            <Label Style="{StaticResource BorderBlock}" Grid.Column="2" Grid.RowSpan="4"/>
 
             <!-- Het speelgrid binnen het Tetris-bord -->
-            <Grid x:Name="PlayGrid" Grid.Row="1" Grid.Column="1">
+            <Grid x:Name="PlayGrid" Grid.Column="1" Margin="0,21,0,21" Grid.RowSpan="4">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>

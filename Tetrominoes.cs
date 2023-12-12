@@ -3,7 +3,7 @@ using System.Windows.Media;
 
 namespace Tetris_WPF.Code
 {
-    internal class Coord
+    internal class Coord : MainWindow
     {
         public int X { get; set; }
         public int Y { get; set; }
